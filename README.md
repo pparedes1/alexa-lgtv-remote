@@ -1,4 +1,5 @@
 
+
 # Alexa LG TV Remote [![Build Status](https://travis-ci.org/pparedes1/alexa-lgtv-remote.svg?branch=master)](https://travis-ci.org/pparedes1/alexa-lgtv-remote)
 
 
@@ -57,4 +58,7 @@ builds the app and generates the speechAssets
 * [x] Switch inputs
 
 ## Remote deployment
-Once I ensured the application works locally, I deployed on a Heroku server to have running in the background (could have used AWS, Azure, etc). Remember you'll need to [open up a port](https://portforward.com/router.htm) on your router to map the address on your server and point to your local IP address on your TV. For example if you've set your environment variable `PORT=4001` you'll need to forward all requests from Port=4001 to port 3000 on the IP address of your LG TV on your local network.  
+Once I ensured the application works locally, I deployed on a Heroku server to have running in the background (could have used AWS, Google, etc). A few notes on deploying remotely:
+
+ - You'll need to [open up a port](https://portforward.com/router.htm) on your router to map the address on your server and point to your local IP address on your TV. For example if you've set your environment variable `PORT=4001` you'll need to forward all requests from Port=4001 to port 3000 on the IP address of your LG TV on your local network.  
+ - Heroku doesn't automatically deploy devdependencies from package.json so you'll need to set config var `YARN_PRODUCTION` to `false`. Don't forget to set all other variables like `TV_SOCKET` and `TV_MAC`, otherwise your application running remotely won't find your TV. 
