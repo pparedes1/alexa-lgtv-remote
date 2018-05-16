@@ -1,8 +1,7 @@
 
 
-# Alexa LG TV Remote [![Build Status](https://travis-ci.org/pparedes1/alexa-lgtv-remote.svg?branch=master)](https://travis-ci.org/pparedes1/alexa-lgtv-remote)
+# Alexa LG TV Remote [![Build Status](https://travis-ci.org/pparedes1/alexa-lgtv-remote.svg?branch=master)](https://travis-ci.org/pparedes1/alexa-lgtv-remote) [![Greenkeeper badge](https://badges.greenkeeper.io/pparedes1/alexa-lgtv-remote.svg)](https://greenkeeper.io/)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/pparedes1/alexa-lgtv-remote.svg)](https://greenkeeper.io/)
 
 
 This is a fork of voydz's original German version [here](https://github.com/voydz/alexa-lgtv-remote), this version localizes both English and German languages.
