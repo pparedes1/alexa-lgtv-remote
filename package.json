@@ -49,7 +49,7 @@
     "gulp": "^4.0.0",
     "gulp-babel": "^7.0.0",
     "gulp-eslint": "^4.0.1",
-    "merge-stream": "^1.0.1",
+    "merge-stream": "^2.0.0",
     "nodemon": "^1.17.3"
   }
 }
