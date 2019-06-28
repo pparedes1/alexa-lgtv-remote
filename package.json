@@ -48,7 +48,7 @@
     "flow-typed": "^2.0.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^7.0.0",
-    "gulp-eslint": "^4.0.1",
+    "gulp-eslint": "^6.0.0",
     "merge-stream": "^1.0.1",
     "nodemon": "^1.17.3"
   }
