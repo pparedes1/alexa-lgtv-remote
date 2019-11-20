@@ -50,6 +50,6 @@
     "gulp-babel": "^7.0.0",
     "gulp-eslint": "^4.0.1",
     "merge-stream": "^1.0.1",
-    "nodemon": "^1.17.3"
+    "nodemon": "^2.0.0"
   }
 }
