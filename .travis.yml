@@ -1,14 +1,13 @@
 language: node_js
 
 node_js:
-  - "7"
-  - "8"
-  - "9"
+  - "11"
+  - "12"
 
 env:
   - CXX=g++-4.8
 
 before_script:
-  - npm install -g gulp
+  - npm install -g gulp eslint-config-airbnb @babel/core @babel/preset-env
 
 script: gulp build

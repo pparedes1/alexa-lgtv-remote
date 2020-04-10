@@ -10,10 +10,7 @@
     "watch": "gulp serve",
     "docs": "gulp build && node dist/bin/docgen.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/voydz/alexa-lgtv-remote.git"
-  },
+  "repository": "https://github.com/voydz/alexa-lgtv-remote.git",
   "keywords": [
     "alexa",
     "lg",
@@ -27,29 +24,31 @@
     "url": "https://github.com/voydz/alexa-lgtv-remote/issues"
   },
   "dependencies": {
-    "alexa-app": "^4.2.2",
-    "dotenv": "^5.0.1",
+    "alexa-app": "^4.2.3",
+    "dotenv": "^8.2.0",
     "express": "^4.14.1",
-    "i18next": "^11.2.3",
+    "i18next": "^19.4.0",
     "i18next-sync-fs-backend": "^1.1.0",
     "lgtv2": "^1.4.1",
-    "promise": "^8.0.1",
+    "promise": "^8.1.0",
     "wake_on_lan": "^1.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.3",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-flow": "^6.23.0",
-    "eslint": "^4.15.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-flowtype": "^2.46.3",
-    "flow-bin": "^0.72.0",
-    "flow-typed": "^2.0.0",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-flow": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "2.20.2",
+    "flow-bin": "^0.122.0",
+    "flow-typed": "^3.1.0",
     "gulp": "^4.0.0",
-    "gulp-babel": "^7.0.0",
-    "gulp-eslint": "^4.0.1",
-    "merge-stream": "^1.0.1",
-    "nodemon": "^1.17.3"
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "merge-stream": "^2.0.0",
+    "nodemon": "^2.0.3"
   }
 }

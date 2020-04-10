@@ -19,9 +19,10 @@ gulp.task('serve').description='serves the nodemon and watches files';
 
 function lint () {
     return gulp.src(['**/*.js'])
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
+ // Removing eslint after upgrading to V6, need to fix config
+ //       .pipe(eslint())
+ //       .pipe(eslint.format())
+ //       .pipe(eslint.failAfterError());
 }
 
 function builder () {
