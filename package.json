@@ -8,7 +8,7 @@
     "test": "gulp lint",
     "dev": "flow-typed install && npm run start",
     "watch": "gulp serve",
-    "docs": "gulp build && node dist/bin/docgen.js"
+    "docgen": "gulp build && node dist/bin/docgen.js"
   },
   "repository": "https://github.com/voydz/alexa-lgtv-remote.git",
   "keywords": [
@@ -29,7 +29,7 @@
     "express": "^4.14.1",
     "i18next": "^19.8.3",
     "i18next-sync-fs-backend": "^1.1.0",
-    "lgtv2": "^1.4.1",
+    "lgtv2": "^1.6.3",
     "promise": "^8.1.0",
     "wake_on_lan": "^1.0.0"
   },
