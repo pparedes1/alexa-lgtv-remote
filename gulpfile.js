@@ -1,5 +1,5 @@
 const babel = require('gulp-babel');
-const eslint = require('gulp-eslint');
+const eslint = require('gulp-eslint7');
 const gulp = require('gulp');
 const merge = require('merge-stream');
 const nodemon = require('nodemon');
@@ -18,9 +18,17 @@ gulp.task('serve', gulp.parallel('watch', startServer));
 gulp.task('serve').description='serves the nodemon and watches files';
 
 function lint () {
-    return gulp.src(['**/*.js'])
-        .pipe(eslint())
+    // ESLint ignores files with "node_modules" paths.
+    // So, it's best to have gulp ignore the directory as well.
+    // Also, Be sure to return the stream from the task;
+    // Otherwise, the task may end before the stream has finished.
+    return gulp.src(['**/*.js','!node_modules/**'])
+        // eslint() attaches the lint output to the "eslint" property
+        // of the file object so it can be used by other modules.        
+        .pipe(eslint({fix:true}))
         .pipe(eslint.format())
+        // eslint.format() outputs the lint results to the console.
+        // Alternatively use eslint.formatEach() (see Docs).
         .pipe(eslint.failAfterError());
 }
 

@@ -52,7 +52,7 @@ class Lookup {
 
         console.log('try to resolve app ' + app);
 
-        if (!appDictionary.hasOwnProperty(app))
+        if (!Object.prototype.hasOwnProperty.call(appDictionary,app))
             throw new Error('app id not known');
 
         return appDictionary[app];

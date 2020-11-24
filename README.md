@@ -1,6 +1,6 @@
 
 
-# Alexa LG TV Remote [![Build Status](https://travis-ci.org/voydz/alexa-lgtv-remote.svg?branch=master)](https://travis-ci.org/voydz/alexa-lgtv-remote) [![Greenkeeper badge](https://badges.greenkeeper.io/pparedes1/alexa-lgtv-remote.svg)](https://greenkeeper.io/)
+# Alexa LG TV Remote [![Build Status](https://travis-ci.org/voydz/alexa-lgtv-remote.svg?branch=master)](https://travis-ci.org/voydz/alexa-lgtv-remote) [![Known Vulnerabilities](https://snyk.io/test/github/pparedes1/alexa-lgtv-remote/badge.svg?targetFile=package.json)](https://snyk.io/test/github/pparedes1/alexa-lgtv-remote?targetFile=package.json)
 
 
 
